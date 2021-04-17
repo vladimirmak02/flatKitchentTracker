@@ -1,0 +1,128 @@
+body {
+  font: 22px Helvetica, Arial, sans-serif;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+}
+input,
+select,
+button {
+  font-size: inherit;
+}
+h3 {
+  margin: 0;
+  /* padding-bottom: 0em; */
+}
+ul {
+  list-style: none;
+}
+
+#refresh {
+  font-size: 1rem;
+  background-color: #4e9af1;
+}
+
+#gridContainer {
+  padding-top: 2.5em;
+  display: grid;
+  grid-template-areas:
+    "tabs"
+    "list";
+  grid-gap: 2em;
+  justify-items: center;
+  padding-right: 1em;
+  padding-left: 1em;
+}
+
+button {
+  font-size: 1rem;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  padding: 0.5em 1.2em;
+  border: 0.15em solid #eee;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 0.7em;
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  transition: all 0.2s;
+  cursor: pointer;
+  opacity: 0.95;
+}
+
+#addBtn {
+  padding-top: -50%;
+  background-color: #4e9af1;
+}
+
+select {
+  font-size: 1.5rem;
+  width: 180px;
+  height: 34px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: transparent;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-position-y: 5px;
+  border: 1px solid #dfdfdf;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+table {
+  margin-top: 1em;
+  border-collapse: collapse;
+  margin-bottom: 1em;
+}
+
+td,
+th {
+  border-bottom: 2px solid #c9c9c9;
+  text-align: left;
+  padding: 0.5em;
+}
+
+td {
+  cursor: pointer;
+}
+
+th {
+  font-weight: 600;
+  background-color: rgb(207, 230, 212);
+}
+
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: transparent;
+  border: 1px solid #dfdfdf;
+  border-radius: 2px;
+  /* margin-right: 2rem; */
+}
+
+button:hover {
+  border-color: #ddd;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.2);
+  opacity: 1;
+}
+
+#deleteAll {
+  background: rgba(202, 60, 60, 1);
+  /* this is a maroon */
+}
+
+.close {
+  font-size: 1.5em;
+  text-align: center;
+  color: #f44336;
+}
+
+.close:hover {
+  background-color: #f44336;
+  color: white;
+}

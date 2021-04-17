@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping List</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/stylesheets/shoppinglist.css"
+    />
+  </head>
+  <body>
+    <button id="refresh" style="position: fixed; top: 1%; right: 1%">
+      Refresh
+    </button>
+    <div id="gridContainer">
+      <div style="grid-area: tabs">
+        <a href="/">Kitchen Tracker</a>
+      </div>
+      <div style="grid-area: list">
+        <div id="header" class="header">
+          <!-- <h2>Shopping List</h2> -->
+          <span
+            ><h3>Shopping list!</h3>
+            Use Enter to quickly add stuff to the list.</span
+          >
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center">
+          <div
+            style="
+              border: 2px solid #ffbf00;
+              border-radius: 0.5em;
+              padding: 0.3em;
+            "
+          >
+            I am:
+            <select form="form" id="person" name="person">
+              <option value="william">William</option>
+              <option value="laetitia">Laetitia</option>
+              <option value="filip">Filip</option>
+              <option value="pragya">Pragya</option>
+              <option value="vlad">Vlad</option>
+              <option value="joa">Joa</option>
+              <option value="vaibhav">Vaibhav</option>
+              <option value="everyone">Everyone</option>
+            </select>
+          </div>
+          <form id="form"></form>
+          <table id="productList" style="width: 100%">
+            <tr>
+              <th>Product</th>
+              <th>Person</th>
+              <th>Quantity</th>
+              <th></th>
+            </tr>
+
+            <tr style="background-color: #4e9af117">
+              <td>
+                <label for="product"></label>
+                <input
+                  type="text"
+                  placeholder="Product"
+                  id="product"
+                  name="product"
+                  autofocus
+                  form="form"
+                />
+              </td>
+              <td id="personNameCell"></td>
+              <td>
+                <label for="product"></label>
+                <input
+                  type="number"
+                  placeholder="Quantity"
+                  id="quantity"
+                  name="quantity"
+                  form="form"
+                  onkeypress="return isNumberKey(event)"
+                />
+              </td>
+              <td>
+                <button type="button" id="addBtn">Add</button>
+              </td>
+            </tr>
+          </table>
+          <button type="button" id="deleteAll">Delete All</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="/javascripts/shoppinglist.js"></script>
+</html>

@@ -1,0 +1,118 @@
+body {
+  font: 22px Helvetica, Arial, sans-serif;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+}
+
+.updating {
+  color: #4e9af1;
+}
+
+#insideKitchenName {
+  transition: all 0.4s;
+}
+
+#gridContainer {
+  padding-top: 2.5em;
+  display: grid;
+  grid-template-areas:
+    "header"
+    "form"
+    "buttons"
+    "tabs";
+  grid-gap: 2em;
+  justify-items: center;
+  padding-right: 1em;
+  padding-left: 1em;
+}
+
+#status {
+  margin: 0;
+}
+
+a {
+  color: #00b7ff;
+}
+
+select {
+  font-size: 1.5rem;
+  width: 180px;
+  height: 34px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: transparent;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-position-y: 5px;
+  border: 1px solid #dfdfdf;
+  border-radius: 2px;
+  margin-right: 2rem;
+  cursor: pointer;
+}
+
+select:disabled {
+  cursor: not-allowed;
+  background-color: #eee;
+}
+
+button {
+  font-size: 1.5rem;
+  color: white;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  padding: 0.5em 1.2em;
+  border: 0.15em solid #eee;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 0.7em;
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  transition: all 0.2s;
+  cursor: pointer;
+  opacity: 0.95;
+}
+
+#refresh {
+  font-size: 1rem;
+  background-color: #4e9af1;
+}
+
+#buttonsDiv {
+  display: flex;
+  flex-direction: column;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  color: #ddd;
+}
+
+button:hover {
+  border-color: #ddd;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.2);
+  opacity: 1;
+}
+
+#submitBtn {
+  /* Green */
+  background: rgba(28, 184, 65, 1);
+}
+
+#submitBtn:disabled {
+  /* Green */
+  background: rgba(20, 131, 46, 0.52);
+}
+
+#clearBtn {
+  background: rgba(202, 60, 60, 1);
+  /* this is a maroon */
+}
+
+#clearBtn:disabled {
+  background: rgba(151, 45, 45, 0.52);
+  /* this is a maroon */
+}

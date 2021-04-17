@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kitchen Tracker</title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <button id="refresh" style="position: fixed; top: 1%; right: 1%">
+      Refresh
+    </button>
+    <div id="gridContainer">
+      <div style="grid-area: tabs">
+        <a href="shoppinglist">Shopping List</a>
+      </div>
+      <h1 id="status" style="grid-area: header">
+        <span id="insideKitchenName"></span>
+        is in the kitchen.
+      </h1>
+      <form id="kitchen" style="grid-area: form">
+        <select id="inside" name="inside">
+          <option value="william">William</option>
+          <option value="laetitia">Laetitia</option>
+          <option value="filip">Filip</option>
+          <option value="pragya">Pragya</option>
+          <option value="vlad">Vlad</option>
+          <option value="joa">Joa</option>
+          <option value="vaibhav">Vaibhav</option>
+          <option value="someone">Someone else</option>
+        </select>
+        <input type="hidden" id="occupied" name="occupied" value="false" />
+      </form>
+      <div id="buttonsDiv" style="grid-area: buttons">
+        <button type="button" id="submitBtn">I'm in the kitchen</button>
+        <button type="button" id="clearBtn">
+          No one is in the kitchen anymore
+        </button>
+      </div>
+    </div>
+  </body>
+  <script src="/javascripts/script.js"></script>
+</html>
